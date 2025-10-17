@@ -1,7 +1,8 @@
 # operations-on-diamond-dataset
 
 AIM:
-    To perform the following operations on diamond dataset in 'https://raw.githubusercontent.com/mwaskom/seaborn-data/master/diamonds.csv'
+
+To perform the following operations on diamond dataset in 'https://raw.githubusercontent.com/mwaskom/seaborn-data/master/diamonds.csv'
 
 ```    
 S.No  |  Operation Description                                                          
