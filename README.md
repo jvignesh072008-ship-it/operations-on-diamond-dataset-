@@ -3,7 +3,7 @@
 AIM:
     To perform the following operations on diamond dataset in 'https://raw.githubusercontent.com/mwaskom/seaborn-data/master/diamonds.csv'
 
-    
+```    
 S.No  |  Operation Description                                                          
 ------+---------------------------------------------------------------------------------
 1     |  Read CSV and print first 5 rows                                                
@@ -72,6 +72,7 @@ S.No  |  Operation Description
 64    |  Detect duplicate 'color' entries                                               
 65    |  Count duplicate rows in DataFrame   
 -----------------------------------------------------------------------------------------
+```
 
 PROGRAM:
 ```
