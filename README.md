@@ -2,7 +2,7 @@
 
 AIM:
 
-To perform the following operations on diamond dataset in 'https://raw.githubusercontent.com/mwaskom/seaborn-data/master/diamonds.csv'
+To perform the following operations on diamond dataset in 'https://raw.githubusercontent.com/mwaskom/seaborn-data/master/diamonds.csv'.
 
 ```    
 S.No  |  Operation Description                                                          
@@ -73,7 +73,25 @@ S.No  |  Operation Description
 64    |  Detect duplicate 'color' entries                                               
 65    |  Count duplicate rows in DataFrame   
 -----------------------------------------------------------------------------------------
+
 ```
+
+```
+The Diamonds dataset contains the following field names (columns):
+S.No | fields   |  description
+1.    carat     - weight of the diamond
+2.    cut       - quality of the cut (Fair, Good, Very Good, Premium, Ideal)
+3.    color     - diamond color, from J (worst) to D (best)
+4.    clarity   - how clear the diamond is (I1 (worst), SI2, SI1, VS2, VS1, VVS2, VVS1, IF (best))
+5.    depth     - total depth percentage (z / mean(x, y))
+6.    table     - width of the top of the diamond relative to widest point
+7.    price     - price in U.S. dollars
+8.    x         - length in mm
+9.    y         - width in mm
+10.   z         - depth in mm
+
+```
+
 
 PROGRAM:
 ```
@@ -83,6 +101,14 @@ import pandas as pd
 print("Loading Diamonds dataset...")
 diamonds = pd.read_csv('https://raw.githubusercontent.com/mwaskom/seaborn-data/master/diamonds.csv')
 
+# Printing the feature/field names
+print("Displaying the feature/field names")
+field = list(diamonds.columns)
+s.no = 1
+for i in range(len(field)):
+    print(f"\n{s.no}. {field[i]}")
+    s.no+=1
+    
 print("\n1. Read CSV and Print First 5 Rows")
 print(diamonds.head())
 
@@ -300,6 +326,19 @@ OUTPUT:
 ```
 
 Loading Diamonds dataset...
+
+ Printing the feature/field names
+1. carat
+2. cut
+3. color
+4. clarity
+5. depth
+6. table
+7. price
+8. x
+9. y
+10.z
+
 
 1. Read CSV and Print First 5 Rows
    carat      cut color clarity  depth  table  price     x     y     z
